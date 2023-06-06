@@ -1,0 +1,29 @@
+.aboutme {
+    margin-top: 160px;
+
+    .parent {
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: 300px 1fr;
+        gap: 2rem;
+        justify-content: space-around;
+        align-items: stretch;
+        max-width: 800px;
+        margin: 0 auto;
+        font: 500 100%/1.5 system-ui;
+
+        .text{
+            font-size: large;
+            max-width: 100%;
+            height: auto;
+            text-align: center;
+            padding: auto;
+        }
+
+        .img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    }
+}

@@ -1,0 +1,76 @@
+
+$duration: 1s;
+
+.presentation{
+    background: rgb(40,38,44);
+background: linear-gradient(180deg, rgba(40,38,44,0.9193802521008403) 2%, rgba(81,88,187,0.8045343137254902) 70%);
+    height: 273px;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    padding-bottom: 50px;
+    font-size: larger;
+    position: relative;
+    animation: myAnim $duration linear;
+
+    .title{
+        height: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+
+
+      
+    strong{
+        color: darken($color: $color-2, $amount: 5);
+        font-weight: bolder;
+    }
+    h2, p{
+        text-align: start;
+    }
+    .check{
+        font-style: italic;
+        color: $color-2;
+        height: auto;
+        width: 40%;
+        padding: 14px 30px;
+        transition: background .25s, box-shadow .15s;
+        &:hover{
+            color: $color-2;
+            background: $color-5;
+            box-shadow: 0px 4px 0px 0px $color-4;
+        } 
+    }
+
+}
+
+
+.arrow1{
+    position: absolute;
+    top: 330px;
+    left: -30px;
+    height: 10px;
+    background: $color-2;
+    animation: load 2s 1s linear ;
+}
+
+.arrow2 {
+    position: absolute;
+    top: 370px;
+    left: -30px;
+    height: 10px;
+    background: $color-5;
+    animation: load 4s 1s linear ;
+}
+
+.arrow3{
+    position: absolute;
+    top: 350px;
+    left: -30px;
+    height: 10px;
+    background: $color-3;
+    animation: load 3s 1s linear ;
+}
+}
